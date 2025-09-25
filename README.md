@@ -11,19 +11,24 @@ Features
 
 How to Run:
 
+Backend:
 
-
-Backend
 cd backend
+
 pip install -r requirements.txt
+
 uvicorn app.main:app --reload
 
 
 
-Frontend  
+Frontend: 
+
 cd frontend
+
 npm install
+
 npm start
+
 
 
 
