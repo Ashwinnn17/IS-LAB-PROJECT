@@ -5,9 +5,12 @@ from datetime import datetime
 class NoteCreate(BaseModel):
     content: str
     keywords: str
+    title: str
+    drawing: Optional[str] = None  
 
 class NoteRead(BaseModel):
     id: int
+    encrypted_title: str
     encrypted_content: str
     encrypted_keywords: str
     signature: str
