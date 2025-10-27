@@ -11,28 +11,21 @@ Features
 
 How to Run:
 
-Backend:
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
-cd backend
-
+# Install dependencies
 pip install -r requirements.txt
 
+# Run server
 uvicorn app.main:app --reload
 
 
-
-Frontend: 
-
 cd frontend
-
 npm install
+npm run dev
 
-npm start
-
-
-
-
-Security Features
 - All notes encrypted before storage
 - Digital signatures verify data integrity
 - Persistent key management
